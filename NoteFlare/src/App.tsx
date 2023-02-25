@@ -62,7 +62,9 @@ function App() {
           path="/new" 
           element={
           <CreateNote 
-            onSubmit={onCreateNote} 
+            onSubmit={onCreateNote}
+            onAddTag = {addTag} 
+            availableTags={tags}
             />
           } 
         />

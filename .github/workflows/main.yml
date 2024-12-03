@@ -16,11 +16,14 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v2
 
+      - name: Change directory
+        run: cd NoteFlare
+
       - name: Install dependencies
-        run: cd NoteFlare && npm install
+        run: npm install
 
       - name: Build
-        run: cd NoteFlare && npm run build
+        run: npm run build
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1

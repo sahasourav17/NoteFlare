@@ -20,7 +20,7 @@ jobs:
         run: cd NoteFlare && npm install
 
       - name: Build
-        run: npm run build
+        run: cd NoteFlare && npm run build
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
